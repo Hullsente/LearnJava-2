@@ -1,4 +1,5 @@
 package com.cxk06602.bugcrusher.design.decoratorpattern;
 
-public class Beverage {
+public abstract class Beverage {
+    public abstract int cost();
 }

@@ -1,9 +1,9 @@
 package com.cxk06602.bugcrusher.design.state;
 
-public class AllStateContent {
+public class StateContext {
     private State state = null;
 
-    public AllStateContent(State state) {
+    public StateContext(State state) {
         this.state = state;
     }
     public void action(){

@@ -7,33 +7,33 @@ package com.cxk06602.bugcrusher.design.state;
 public class WaitSellerState implements State{
 
     @Override
-    public void handle(AllStateContent allStateContent) {
+    public void handle(StateContext stateContext) {
         System.out.println("等待卖家确认");
     }
 
     @Override
-    public boolean nextWaitSellerState(AllStateContent allStateContent) {
+    public boolean nextWaitSellerState(StateContext stateContext) {
         return false;
     }
 
     @Override
-    public boolean nextGetItemState(AllStateContent allStateContent) {
-        allStateContent.setState(new GetItemState());
+    public boolean nextGetItemState(StateContext stateContext) {
+        stateContext.setState(new GetItemState());
         return true;
     }
 
     @Override
-    public boolean nextTransportState(AllStateContent allStateContent) {
+    public boolean nextTransportState(StateContext stateContext) {
         return false;
     }
 
     @Override
-    public boolean nextWaitBuyerFinishingState(AllStateContent allStateContent) {
+    public boolean nextWaitBuyerFinishingState(StateContext stateContext) {
         return false;
     }
 
     @Override
-    public boolean nextFinishState(AllStateContent allStateContent) {
+    public boolean nextFinishState(StateContext stateContext) {
         return false;
     }
 }

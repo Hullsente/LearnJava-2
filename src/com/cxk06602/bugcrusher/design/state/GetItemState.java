@@ -7,33 +7,33 @@ package com.cxk06602.bugcrusher.design.state;
 public class GetItemState implements State{
 
     @Override
-    public void handle(AllStateContent allStateContent) {
+    public void handle(StateContext stateContext) {
         System.out.println("等待运输方获得物品");
     }
 
     @Override
-    public boolean nextWaitSellerState(AllStateContent allStateContent) {
+    public boolean nextWaitSellerState(StateContext stateContext) {
         return false;
     }
 
     @Override
-    public boolean nextGetItemState(AllStateContent allStateContent) {
+    public boolean nextGetItemState(StateContext stateContext) {
         return false;
     }
 
     @Override
-    public boolean nextTransportState(AllStateContent allStateContent) {
-        allStateContent.setState(new TransportState());
+    public boolean nextTransportState(StateContext stateContext) {
+        stateContext.setState(new TransportState());
         return true;
     }
 
     @Override
-    public boolean nextWaitBuyerFinishingState(AllStateContent allStateContent) {
+    public boolean nextWaitBuyerFinishingState(StateContext stateContext) {
         return false;
     }
 
     @Override
-    public boolean nextFinishState(AllStateContent allStateContent) {
+    public boolean nextFinishState(StateContext stateContext) {
         return false;
     }
 }
