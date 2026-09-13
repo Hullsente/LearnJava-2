@@ -1,12 +1,10 @@
 package com.cxk06602.bugcrusher.homework.chapter19;
 
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.Properties;
 
 public class Homework03 {
-    static void main() throws IOException {
+    static void main() throws IOException, ClassNotFoundException {
         String path = "src\\dog.properties";
         Properties properties = new Properties();
         properties.put("name", "tom");
@@ -16,10 +14,20 @@ public class Homework03 {
 
         properties = new Properties();
         properties.load(new FileReader(path));
-        System.out.println(new Dog(properties.getProperty("name"), Integer.parseInt(properties.getProperty("age")), properties.getProperty("color")));
+        Dog dog = new Dog(properties.getProperty("name"), Integer.parseInt(properties.getProperty("age")), properties.getProperty("color"));
+        System.out.println(dog);
+
+        String path2 = "src\\dog.dat";
+        FileOutputStream fileOutputStream = new FileOutputStream(path2);
+        ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
+        objectOutputStream.writeObject(dog);
+
+        ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(path2));
+        Dog dog2 = (Dog)objectInputStream.readObject();
+        System.out.println(dog2);
     }
 }
-class Dog{
+class Dog implements Serializable {
     String name;
     int age;
     String color;
