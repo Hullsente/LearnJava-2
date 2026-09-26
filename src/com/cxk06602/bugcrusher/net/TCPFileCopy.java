@@ -1,12 +1,23 @@
 package com.cxk06602.bugcrusher.net;
 
-import javax.imageio.ImageIO;
-import java.io.File;
+import java.io.*;
+import java.net.Socket;
+import java.nio.Buffer;
 
 public class TCPFileCopy {
-    static void main() {
-        File file = new File("D:\\IdeaProjects\\LearnJava-2\\src\\com\\cxk06602\\bugcrusher\\net");
+    static void main() throws IOException{
+        Socket socket = new Socket("127.0.0.1", 15565);
+        OutputStream outputStream = socket.getOutputStream();
+
+        BufferedInputStream bufferedInputStream = new BufferedInputStream(new FileInputStream("src\\com\\cxk06602\\bugcrusher\\net\\BigHead.png"));
+
+        outputStream.write(StreamUtil.inputStreamToByteArray(bufferedInputStream));
+
+        outputStream.flush();
+        socket.shutdownOutput();
+//        --------------
+        InputStream inputStream = socket.getInputStream();
+        System.out.println(StreamUtil.inputStreamToString(inputStream));
 
     }
-
 }
