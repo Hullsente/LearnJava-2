@@ -1,9 +1,9 @@
-package com.cxk06602.bugcrusher.design.decoratorpattern;
+package com.cxk06602.bugcrusher.pattern.decorator;
 
-import com.cxk06602.bugcrusher.design.decoratorpattern.beverages.Coffee;
-import com.cxk06602.bugcrusher.design.decoratorpattern.beverages.TeaMilk;
-import com.cxk06602.bugcrusher.design.decoratorpattern.decorator.Boba;
-import com.cxk06602.bugcrusher.design.decoratorpattern.decorator.Pudding;
+import com.cxk06602.bugcrusher.pattern.decorator.beverages.Coffee;
+import com.cxk06602.bugcrusher.pattern.decorator.beverages.TeaMilk;
+import com.cxk06602.bugcrusher.pattern.decorator.decorator.Boba;
+import com.cxk06602.bugcrusher.pattern.decorator.decorator.Pudding;
 
 public class Main {
     static void main() {

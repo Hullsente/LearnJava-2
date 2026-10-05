@@ -1,6 +1,6 @@
-package com.cxk06602.bugcrusher.design.decoratorpattern.decorator;
+package com.cxk06602.bugcrusher.pattern.decorator.decorator;
 
-import com.cxk06602.bugcrusher.design.decoratorpattern.Beverage;
+import com.cxk06602.bugcrusher.pattern.decorator.Beverage;
 
 public class Boba extends ToppingDecorator{
     private final int COST = 1;

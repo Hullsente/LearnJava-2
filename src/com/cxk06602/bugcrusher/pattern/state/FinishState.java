@@ -1,14 +1,14 @@
-package com.cxk06602.bugcrusher.design.state;
+package com.cxk06602.bugcrusher.pattern.state;
 
 /**
  * @author cxk06602
- * @apiNote 等待卖家确认
+ * @apiNote 完成状态
  */
-public class WaitSellerState implements State{
+public class FinishState implements State{
 
     @Override
     public void handle(StateContext stateContext) {
-        System.out.println("等待卖家确认");
+        System.out.println("此订单运输完成");
     }
 
     @Override
@@ -18,8 +18,7 @@ public class WaitSellerState implements State{
 
     @Override
     public boolean nextGetItemState(StateContext stateContext) {
-        stateContext.setState(new GetItemState());
-        return true;
+        return false;
     }
 
     @Override

@@ -1,6 +1,6 @@
-package com.cxk06602.bugcrusher.design.decoratorpattern.beverages;
+package com.cxk06602.bugcrusher.pattern.decorator.beverages;
 
-import com.cxk06602.bugcrusher.design.decoratorpattern.Beverage;
+import com.cxk06602.bugcrusher.pattern.decorator.Beverage;
 
 public class FruitMile extends Beverage {
     @Override

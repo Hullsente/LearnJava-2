@@ -1,4 +1,4 @@
-package com.cxk06602.bugcrusher.design.state;
+package com.cxk06602.bugcrusher.pattern.state;
 
 public class StateContext {
     private State state = null;

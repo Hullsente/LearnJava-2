@@ -1,6 +1,6 @@
-package com.cxk06602.bugcrusher.design.decoratorpattern.decorator;
+package com.cxk06602.bugcrusher.pattern.decorator.decorator;
 
-import com.cxk06602.bugcrusher.design.decoratorpattern.Beverage;
+import com.cxk06602.bugcrusher.pattern.decorator.Beverage;
 
 public abstract class ToppingDecorator extends Beverage {
     protected Beverage beverage;
