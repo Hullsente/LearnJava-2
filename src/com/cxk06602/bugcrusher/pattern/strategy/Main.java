@@ -1,10 +1,10 @@
 package com.cxk06602.bugcrusher.pattern.strategy;
 
 
-import strategy.ducks.BlueDuck;
-import strategy.ducks.GreenDuck;
-import strategy.ducks.RedDuck;
-import strategy.ducks.YellowDuck;
+import com.cxk06602.bugcrusher.pattern.strategy.ducks.BlueDuck;
+import com.cxk06602.bugcrusher.pattern.strategy.ducks.GreenDuck;
+import com.cxk06602.bugcrusher.pattern.strategy.ducks.RedDuck;
+import com.cxk06602.bugcrusher.pattern.strategy.ducks.YellowDuck;
 
 public class Main {
     /**
