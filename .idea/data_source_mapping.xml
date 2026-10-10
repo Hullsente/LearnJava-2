@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourcePerFileMappings">
+    <file url="file://$PROJECT_DIR$/Query.sql" value="44ee253b-a3c6-4bd9-a1bb-9a97aaf837a7" />
+    <file url="file://$PROJECT_DIR$/Query_1.sql" value="44ee253b-a3c6-4bd9-a1bb-9a97aaf837a7" />
+    <file url="file://$PROJECT_DIR$/Query_2.sql" value="44ee253b-a3c6-4bd9-a1bb-9a97aaf837a7" />
+    <file url="file://$PROJECT_DIR$/Query_3.sql" value="44ee253b-a3c6-4bd9-a1bb-9a97aaf837a7" />
+    <file url="file://$PROJECT_DIR$/Query_4.sql" value="44ee253b-a3c6-4bd9-a1bb-9a97aaf837a7" />
+    <file url="file://$PROJECT_DIR$/Query_5.sql" value="44ee253b-a3c6-4bd9-a1bb-9a97aaf837a7" />
+    <file url="file://$PROJECT_DIR$/Query_7.sql" value="44ee253b-a3c6-4bd9-a1bb-9a97aaf837a7" />
+    <file url="file://$PROJECT_DIR$/createable.sql" value="44ee253b-a3c6-4bd9-a1bb-9a97aaf837a7" />
+    <file url="file://$PROJECT_DIR$/dopment.sql" value="44ee253b-a3c6-4bd9-a1bb-9a97aaf837a7" />
+    <file url="file://$PROJECT_DIR$/goods_information.sql" value="44ee253b-a3c6-4bd9-a1bb-9a97aaf837a7" />
+    <file url="file://$PROJECT_DIR$/lesson_score.sql" value="44ee253b-a3c6-4bd9-a1bb-9a97aaf837a7" />
+  </component>
+</project>

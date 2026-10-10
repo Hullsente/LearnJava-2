@@ -1,5 +1,7 @@
 package com.cxk06602.bugcrusher.leetcode;
 
+import java.util.Scanner;
+
 public class Q34 {
     static void main() {
 //        for(int n : new Solution().searchRange(new int[]{5,7,7,8,8,10}, 6)){
