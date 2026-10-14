@@ -102,4 +102,47 @@ SELECT emp.ename, emp.deptno, emp.sal
         SELECT deptno ,AVG(sal) AS avg_sal FROM emp
             group by deptno
     ) avg_temp
-    WHERE avg_temp.deptno = emp.deptno AND emp.sal > avg_sal
+    WHERE avg_temp.deptno = emp.deptno AND emp.sal > avg_sal;
+
+SELECT dept.*, people_count FROM dept, (
+        SELECT deptno, COUNT(deptno) AS people_count FROM emp
+            GROUP BY deptno
+    ) temp
+    WHERE temp.deptno = dept.deptno AND
+        temp.deptno = dept.deptno;
+
+SELECT deptno, COUNT(deptno) FROM emp
+    GROUP BY deptno;
+
+SELECT * FROM dept;
+
+-- 去除重复表
+
+SELECT * FROM emp;
+
+DROP TABLE temp_table;
+
+INSERT INTO emp
+    SELECT * FROM emp;
+
+CREATE TABLE temp_table LIKE emp;
+
+INSERT INTO temp_table
+    SELECT DISTINCT * FROM emp;
+
+DELETE FROM emp;
+
+INSERT INTO emp
+    SELECT DISTINCT * FROM temp_table;
+
+DROP TABLE temp_table;
+
+-- 表外链接
+DELETE FROM emp WHERE ename = 'WILLWIAN';
+#右连接
+SELECT dname, `ename`, job FROM emp
+    RIGHT JOIN dept ON dept.deptno = emp.deptno;
+#左连接
+SELECT dname, `ename`, job FROM dept
+    LEFT JOIN emp
+        ON dept.deptno = emp.deptno;
