@@ -11,3 +11,5 @@ DROP TABLE table03;
 SELECT * FROM table03;
 
 SELECT COUNT(*) FROM table03;
+
+UPDATE db01.actor SET name = '天才' WHERE name = '小华';

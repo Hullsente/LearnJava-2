@@ -20,6 +20,5 @@ public class Batch {
         }
 
         JDBCUtils.close(connect, preparedStatement, null);
-
     }
 }

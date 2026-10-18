@@ -26,5 +26,8 @@
     </orderEntry>
     <orderEntry type="library" name="mysql-connector-j-26.7.0" level="project" />
     <orderEntry type="library" name="c3p0-0.9.5.5" level="project" />
+    <orderEntry type="library" name="mchange-commons-java-0.2.19" level="project" />
+    <orderEntry type="library" name="druid-1.2.9" level="project" />
+    <orderEntry type="library" name="commons-dbutils-1.8.1" level="project" />
   </component>
 </module>
